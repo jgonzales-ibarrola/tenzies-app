@@ -1,2 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import "tailwindcss";
 
+.text-inter {
+  font-family: "Inter", serif;
+}
+
+.text-karla {
+  font-family: "Karla", serif;
+}
+
+@layer utilities {
+  .on-hold {
+    background-color: #59E391;
+  }
+}
+
+@layer components {
+  .card {
+    background: #F5F5F5;
+  }
+
+  button {
+    font-family: "Karla", serif;
+    @apply py-2 px-3 text-[20.59px] font-bold bg-white rounded-md;
+  }
+}
